@@ -1,0 +1,67 @@
+1.How to Add a User in Linux
+This command will add the user named “test_user”.
+
+sudo useradd test_user
+
+2. How to Add User by Specifying a home directory path for the new user
+To give a home directory path for new users, we use the following command in Linux.
+
+sudo useradd -d /home/test_user test_user
+
+This will set the home directory of the us”/home/test_user”.
+
+3. How to Create a User with a Specific User ID (UID)
+To create a new user with a custom UID, we use the following command.
+
+sudo useradd -u 1234 test_user
+
+This will create a new user with the user-id “1234” and the name “test_user”.
+
+4. How to Create a User with a Specific Group ID (GID)
+To create a new user and assign a specific group ID, use the following command
+
+sudo useradd -g 1000 test_user
+
+This will create a new user with the group id “1000” and the name “test_user”.
+
+5. How to Create a User Without a Home Directory
+To create a user without a home directory, we use the following command.
+
+sudo useradd -M test_user
+
+This will create the user with the name “test_user” and that too without a home directory.
+
+6. How to Create User with an Expiry Date
+To set an expiry date for a user account, we use the following command.
+
+sudo useradd -e 2020-05-30 test_user
+
+This will create the user named “test_user” with the expiry date of 30th May 2020.
+
+7. How to Create User with a Comment
+To add a comment or description for a user, we use the following command.
+
+sudo useradd -c "This is a test user" test_user
+
+This will create a user with a short comment or description of the user.
+
+8. How to Create a User with Changed Login Shell
+To create a user with a different login shell, we use the following command.
+
+sudo useradd -s /bin/sh test_user
+
+This will create a user named “test_user” with the default shell /bin/sh.
+
+9. How to Set an Unencrypted Password for the User
+To set an unencrypted password for the user, we use the following command.
+
+sudo useradd -p test_password test_user
+
+This will create a new user with the name “test_user” and an unencrypted password “test_password”.
+
+10. Displaying Help
+To display help, we use the following command.
+
+sudo useradd --help
+
+This command will display the help section of the useradd command
