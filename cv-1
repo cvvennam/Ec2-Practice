@@ -1,4 +1,4 @@
-i[200~As cloud architects and developers, knowing the limitations of our tools is crucial for building robust and scalable solutions.
+ii[200~As cloud architects and developers, knowing the limitations of our tools is crucial for building robust and scalable solutions.
 
 • ECR image size: 10GB
 • EBS volume size: 64TB
@@ -23,5 +23,5 @@ i[200~As cloud architects and developers, knowing the limitations of our tools 
 • API Gateway payload: 10MB for REST, 6MB for WebSocket
 • Subnet IP limit: Based on CIDR block, e.g., /28 = 11 usable IPs
 • DynamoDB Item Size: 400KB
-
+This is the end of the document
 Remember, many of these are soft limits that can be increased by contacting AWS support.
